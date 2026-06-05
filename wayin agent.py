@@ -53,7 +53,7 @@ def run_agent(headline: str) -> dict:
         print(f"--- Iteration {iteration} ---")
 
         response = client.messages.create(
-            model="claude sonnet 4",
+            model="claude-sonnet-4-6",
             max_tokens=2000,
             system=SYSTEM_PROMPT,
             tools=TOOLS_DEFINITION,
